@@ -17,7 +17,7 @@ export default function SignIn() {
 
     try {
       await mutateUser(
-        fetchJson('/api/signin', {
+        fetchJson('/api/signin2', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(body),
