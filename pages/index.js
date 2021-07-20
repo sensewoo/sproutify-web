@@ -34,7 +34,7 @@ export const getServerSideProps = withSession(async function ({ req, res }) {
   }
 
   // TODO: Get the users balance via /balances/{user.mqUser.token}
-  const mqBalanceResponse = await marqetaClient.get(`/balances/${user.mqUser.token}`)
+  const mqBalanceResponse = await marqetaClient.get(`/balances/ddc2396e-f870-4ef3-9cd0-108580b03400}`)
   const balance = mqBalanceResponse.data
   console.log('Balance: ', balance)
 
